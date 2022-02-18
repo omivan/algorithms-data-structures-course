@@ -61,5 +61,8 @@ dkms.conf
 *.i
 *.s
 *.cbp
-.DS_Store/
+.DS_Store
+*/.DS_Store
 vscode/
+tasks.json
+main
