@@ -9,7 +9,7 @@ int main()
 {
     int points_number;
     double x_points[1000];
-    double y_points[1000];
+    double y_points[1000]; 
     printf("Input number of points(min - 2): ");
     scanf("%d", &points_number);
     if(points_number >=2)
@@ -23,6 +23,11 @@ int main()
             y_points[i] = y;
         }
         min_distance = point_distance(x_points[0], y_points[0], x_points[1], y_points[1]);
+        point1_best_x = x_points[0];
+        point1_best_y = y_points[0];
+        point2_best_x = x_points[1];
+        point1_best_y = y_points[1];
+
         for(int i = 0; i < points_number; i++)
             for(int j = 0; j < points_number; j++)
         {
